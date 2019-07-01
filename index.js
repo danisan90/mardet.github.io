@@ -23,6 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
   });
+ 
+
+
+    $(".modal-button").click(function() {
+      $(".modal").addClass("is-active");  
+    });
+    
+    $(".delete").click(function() {
+       $(".modal").removeClass("is-active");
+    });
   jQuery(document).ready(function( $ ) {
 
     // Preloader
