@@ -26,13 +26,35 @@ document.addEventListener('DOMContentLoaded', () => {
  
 
 
-    $(".modal-button").click(function() {
-      $(".modal").addClass("is-active");  
+    $(".modal-button.radar").click(function() {
+      $(".modal.radar").addClass("is-active");  
     });
     
     $(".delete").click(function() {
-       $(".modal").removeClass("is-active");
+       $(".modal.radar").removeClass("is-active");
     });
+
+
+    $(".modal-button.medicion").click(function() {
+      $(".modal.medicion").addClass("is-active");  
+    });
+    
+    $(".delete").click(function() {
+       $(".modal.medicion").removeClass("is-active");
+    });
+
+
+    $(".modal-button.recepcion").click(function() {
+      $(".modal.recepcion").addClass("is-active");  
+    });
+    
+    $(".delete").click(function() {
+       $(".modal.recepcion").removeClass("is-active");
+    });
+
+
+    
+    
   jQuery(document).ready(function( $ ) {
 
     // Preloader

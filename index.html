@@ -23,21 +23,21 @@
   Hero Section
   ============================-->
   <section id="hero">
-<div class="hero-container">
-      <div class="wow fadeIn">
-       <h1>Mardet S.R.L</h1>
+      <div class="hero-container">
+          <div class="wow fadeIn">
+          <h1>Mardet S.R.L</h1>
        
-        <div class="actions">
-          <a href="#about" class="btn-get-started">Nosotros</a>
-          <a href="#sistemsandsInstruments" class="btn-services">Sistemas e Instrumentos</a>
-        </div>
+          <div class="actions">
+              <a href="#about" class="btn-get-started">Nosotros</a>
+              <a href="#services" class="btn-services">Sistemas</a>
+          </div>
+          </div>
       </div>
-    </div>
   </section>
    <!--==========================
   Header Section
   ============================-->
-  <header id="header">
+      <header id="header">
     <div class="container">
 
       <div id="logo" class="pull-left">
@@ -51,7 +51,7 @@
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#about">Nosotros</a></li>
           <li><a href="#services">Sistemas e Instrumentos</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#desarrollos">Desarrollos</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#team">Team</a></li>
           <li class="menu-has-children"><a href="">Drop Down</a>
@@ -76,7 +76,7 @@
       </nav>
       <!-- #nav-menu-container -->
     </div>
-  </header>
+      </header>
  <!-- 
       About Section
       ============================--> 
@@ -148,61 +148,78 @@
             <div class="columns is-multiline is-mobile">
                 <div class="column is-one-fifth">
                   <!-- <div class="service-icon"><i class="fa fa-bar-chart"></i></div> -->
-                    <h4 class="service-title"><a  class = "button is-text modal-button" data-target="#modal">Radares<br> Meteorologicos</a></h4>
-                    <div id="modal" class = "modal">
+                    <h4 class="service-title"><a  class = "button is-text modal-button radar" data-target="#modal">Radares<br> Meteorologicos</a></h4>
+                    <div id="modal" class = "modal radar">
                         <div class = "modal-background"></div>
                         <div class = "modal-card">
                            <header class = "modal-card-head">
-                              <p class = "modal-card-title">radares</p>
+                              <p class = "modal-card-title">Radares Meteorológicos</p>
                               <button class = "delete" aria-label="close"></button>
                            </header>
-                           <section class = "modal-card-body">
+                           <section class = "modal-card-body ">
                               <div class = "content">
-                                 <h1>ANDA?</h1>
-                                 <p>Nuestra compañía distribuye los radares Enterprise Electronics Corporation, que es líder con mas del 70% del mercado mundial. 
+                                  <p>El radar meteorológico es el instrumento de medición primario para la detección y seguimiento de sistemas severos,
+                                  como así también el pronóstico de su evolución en corto y muy corto plazo.<br>
+                                  Nuestra compañía distribuye los radares Enterprise Electronics Corporation, que es líder con mas del 70% del mercado mundial. 
                                     Los modernos sistemas de radar cuentan básicamente con el sensor de radar, realizando el control, la presentación y la elaboración de la información a través de sistemas de procesamiento.
                                     </p>
-                                 <h2>Sensores</h2>
-                                 <p>Transmisor: los sistemas de transmisión son basados en magnetrón, klystron, o elementos de estado solido, con potencias deransmisión de entre 250 Kw y 1000 Kw, en las bandas de frecuencia C, S y X. 
-                                    Rangos de medición: hasta 550 Km en reflectividad para detección de precipitación, y hasta 220 Km a través del sistema Doppler para la medición de velocidad. Doble polarización. 
-                                    Receptor y modulador: de estado sólido, con alta supresión de ecos de tierra. 
-                                    Antena parabólica: con diámetro entre 2,44m y 8,32m 
-                                    
-                                    
-                                    </p>
-                                 <h2>Sistemas integrados de baja potencia</h2>
-                                 <blockquote>This is simple text.This is simple text.This is simple text.This is simple text.</blockquote>
-                                 <h3>Procesamiento</h3>
-                                 <p>Software de procesamiento de alta performance, con elaboración múltiple en varios niveles. 
+                                  <div class="wrap-collabsible">
+                                      <input id="collapsiblesensor" class="toggle" type="checkbox">
+                                      <label for="collapsiblesensor" class="lbl-toggle">Sensores</label>
+                                      <div class="collapsible-content">
+                                          <div class="content-inner">
+                                              <p><b>Transmisor:</b> los sistemas de transmisión son basados en magnetrón, klystron, o elementos de estado solido, con potencias de transmisión de entre 250 Kw y 1000 Kw, en las bandas de frecuencia C, S y X. 
+                                                  <br><b>Rangos de medición:</b> hasta 550 Km en reflectividad para detección de precipitación, y hasta 220 Km a través del sistema Doppler para la medición de velocidad. Doble polarización. 
+                                                  <br><b>Receptor y modulador:</b> de estado sólido, con alta supresión de ecos de tierra. 
+                                                  <br><b>Antena parabólica:</b> con diámetro entre 2,44m y 8,32m.
+                                                  <br>Sistemas integrados de baja potencia.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                                  <div class="wrap-collabsible">
+                                      <input id="collapsibleproces" class="toggle" type="checkbox">
+                                      <label for="collapsibleproces" class="lbl-toggle">Procesamiento</label>
+                                      <div class="collapsible-content">
+                                          <div class="content-inner">
+                                              <p>Software de procesamiento de alta performance, con elaboración múltiple en varios niveles. 
 
-                                  Foto presentacion
+                                                  
+                                                  <br>Sistemas completos de estado solido de corto alcance, para usos especiales como ser explotaciones comerciales, petroliferas, televisoras, etc.
+                                                  
+                                                  <br>Provisión de infraestructura, incluyendo torres y radomos, pudiendo proveer el sistema Completo y en funcionamiento llave en mano. 
+                                                  
+                                                  <br>Soporte técnico para instalación, puesta en funcionamiento, reparación y mantenimiento en la Argentina y países limítrofes.</p>
+                                                 
+                                          
+                                          
+                                          
+                                          
+                                          </div>
+                                    </div>
+                                  </div>
+                                  <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FEECRadar%2Fvideos%2F393065098092879%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                                  <span><b>Radar Meteorologico banda S y Sistema de Recepción satelital de EEC instalados para el Sistema de Monitoreo de Inundaciones de la Ciudad de Buenos Aires.</b></span>
+                          
                                   
-                                  Sistemas completos de estado solido de corto alcance, para usos especiales como ser explotaciones comerciales, petroliferas, televisoras, etc.
-                                  
-                                  Provisión de infraestructura, incluyendo torres y radomos, pudiendo proveer el sistema Completo y en funcionamiento llave en mano. 
-                                  
-                                  Soporte técnico para instalación, puesta en funcionamiento, reparación y mantenimiento en la Argentina y países limítrofes.
-                                  </p>
-                                 <h5>Level Five</h5>
-                                 <p>Radar Meteorologico banda S y Sistema de Recepción satelital de EEC instalados para el Sistema de Monitoreo de Inundaciones de la Ciudad de Buenos Aires.</p>
-                                 </ul>
+                              </ul>
                               </div>
                             
                            </section>
                         </div>
                      </div>
                       <!-- <img src="imgs/mar.jpg" alt="img"> --> 
-                    <p class="service-description">El radar meteorológico es el instrumento de medición primario para la detección y seguimiento de sistemas severos,
-                como así también el pronóstico de su evolución en corto y muy corto plazo. </p>
+                    <p class="service-description"><img src="imgsoldPage/radar2.jpg" alt="radar" height="42" width="42">
+                    </p>
                 </div>
             
                 <div class="column is-one-fifth">
-                  <h4 class="service-title"><a class = "button is-text modal-button" data-target="#modal">Medición de visibilidad<br> y altura de nubes</a></h4>
-                    <div id="modal" class = "modal">
+                  <h4 class="service-title"><a class = "button is-text modal-button medicion" data-target="#modal">Medición de visibilidad<br> y altura de nubes</a></h4>
+                    <div id="modal" class = "modal medicion">
                     <div class = "modal-background"></div>
                         <div class = "modal-card">
                        <header class = "modal-card-head">
-                          <p class = "modal-card-title">asdaasd</p>
+                          <p class = "modal-card-title">Medición de visibilidad y altura de nubes</p>
                           <button class = "delete" aria-label="close"></button>
                        </header>
                        <section class = "modal-card-body">
@@ -214,9 +231,9 @@
                              <p>Sistemas Ceilometros láser para medición de altura de base de nubes.<br>
                               Todos los sistemas permiten expansión para pasar de un sistema base Clase I a un sistema Clase III.</p>
                              <h2>Sistemas meteorologicos aeronauticos integrados</h2>
-                             <p>Sistemas meteorologicos aeronauticos para aeropuertos clase I, II y III
-                              Presentación ,control y archivo a través de PC.
-                              Presentacion remota en torre o sala de control.
+                             <p>Sistemas meteorologicos aeronauticos para aeropuertos clase I, II y III.
+                              Presentación ,control y archivo a través de PC.<br>
+                              Presentacion remota en torre o sala de control.<br>
                               Provisión, instalación y puesta en marcha.
 
                               https://www.degreane-horizon.com/en/
@@ -238,34 +255,29 @@
                 
             
                 <div class="column is-one-fifth">
-                  <h4 class="service-title"><a class = "button is-text modal-button" data-target="#modal">Sistemas de Recepción de<br>satélites meteorológicos</a></h4>
-                  <div id="modal" class = "modal">
+                  <h4 class="service-title"><a class = "button is-text modal-button recepcion" data-target="#modal">Sistemas de Recepción de<br>satélites meteorológicos</a></h4>
+                  <div id="modal" class = "modal recepcion">
                     <div class = "modal-background"></div>
                         <div class = "modal-card">
                        <header class = "modal-card-head">
-                          <p class = "modal-card-title">asdaasd</p>
+                          <p class = "modal-card-title">Sistemas de recepción y procesamiento de imágenes y<br>datos de satélites meteorológicos.</p>
                           <button class = "delete" aria-label="close"></button>
                        </header>
                        <section class = "modal-card-body">
                           <div class = "content">
-                             <h2>Sistemas de recepción y procesamiento de imágenes y datos de satélites meteorológicos.</h2>
-                             <p>Sistema de cómputo de RVR (Rango Visual de Pista)</p>
-                             <h2>Sistemas de medición de altura de base de nubes </h2>
-                             <p>Sistemas Ceilometros láser para medición de altura de base de nubes.<br>
-                              Todos los sistemas permiten expansión para pasar de un sistema base Clase I a un sistema Clase III.</p>
-                             <h2>Sistemas meteorologicos aeronauticos integrados</h2>
-                             <p>Sistemas meteorologicos aeronauticos para aeropuertos clase I, II y III
-                              Presentación ,control y archivo a través de PC.
-                              Presentacion remota en torre o sala de control.
-                              Provisión, instalación y puesta en marcha.
-
-                              https://www.degreane-horizon.com/en/
-
-
-                              Si queres, deja el video que se ve.
-                                                            
-                              </p>
-                            </div>
+                             
+                             <h2>Satélites de órbita polar.
+                              Satélites de órbita geoestacionaria.
+                             </h2>
+                             <h2>Satélites NOAA</h2>
+                             
+                             <h2>Satélites GOES R </h2>
+                             <h2>Provision de sistemas llave en mano, incluyendo infraestructura, instalación y puesta en marcha. 
+                            </h2>
+                            <h2>Soporte técnico para instalación, puesta en funcionamiento, reparación y mantenimiento en la Argentina y países limítrofes.</h2>
+                            <p>http://www.eecweathertech.com/
+                            </p>
+                          </div>
                         
                         </section>
                         </div>
@@ -318,7 +330,7 @@
       <!-- ------------------------------ -->
 
 
-      <section id="sistemsandsInstruments">
+      <section id="desarrollos">
         <div class="container wow fadeInUp">
           <div class="row">
             <div class="col-md-12">
@@ -348,7 +360,9 @@
           </div>
         </div>
       </section>
-      
+
+
+
      <!--==========================
   Contact Section
   ============================-->
