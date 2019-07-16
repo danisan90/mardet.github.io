@@ -268,7 +268,18 @@ nav{
       margin: 0;
       overflow-x: hidden;
     }
+    nav{
+      width: 100%;
+      position: absolute;
+      top: 0;
+    }
+    #hero{
+      position: relative;
+      top: 30px;
+    }
+    
     .nav-menu{
+      
       position: absolute;
       right: 0px;
       height: 92vh;
@@ -358,15 +369,15 @@ nav{
 //     max-width: 100%;
 //   }
   
-//   @media (max-width: 768px) {
-//     #about .about-img {
-//       height: auto;
-//     }
-//     #about .about-img img {
-//       margin-left: 0;
-//       padding-bottom: 30px;
-//     }
-//   }
+  @media (max-width: 768px) {
+    #about .about-img {
+      height: auto;
+    }
+    #about .about-img img {
+      margin-left: 0;
+      padding-bottom: 30px;
+    }
+  }
   
 //   #about .about-content {
 //     background: #fff;
