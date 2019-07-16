@@ -1,19 +1,19 @@
 $background-navbar: rgb(42, 54, 59);
-$background-navbar-transparente:(42, 54, 59,.25);
+$background-navbar-transparente:(42, 54, 59,.1);
 $font-color-navbar: #FECEAB ;
 $logo-font-color: #E84A5F;
 $hover-font-color-navbar: #99B898;
 $background-button-navbar: #d6482f;
 $btn-get-started-background: #f36767;
 $modal-background-background-color:#f36767;
+$title-divider: #99B898; 
 
 
 body{ 
   margin: 0;
   padding:0;
+
 }
-
-
 .container-welcome{
     display: flex;
     justify-content: center;
@@ -24,8 +24,6 @@ body{
     text-align: center;
 }
 
-
-
 /*--------------------------------------------------------------
 # Welcome
 --------------------------------------------------------------*/
@@ -33,8 +31,11 @@ body{
     display: table;
     width: 100%;
     height: 100vh;
-    background: url('../imgs/horizontalimage.jpg') top center;
+    background: url('../imgs/americapicture.jpg') top center;
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   
   @media (min-width: 1024px) {
@@ -157,7 +158,7 @@ body{
   }
   
   #header #logo h1 a, #header #logo h1 a:hover {
-    color: #fff;
+    color: $font-color-navbar;
   }
   
   #header #logo img {
@@ -178,15 +179,15 @@ body{
     }
   }
   
-  .is-sticky #header {
-    background: rgba(0, 0, 0, 0.85);
-  }
+  // .is-sticky #header {
+  //   background: rgba(0, 0, 0, 0.85);
+  // }
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 nav{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 8vh;
   background-color: $background-navbar;
@@ -196,24 +197,29 @@ nav{
     .transparent{
       background-color:$background-navbar-transparente;
       transition: background-color 1s ease 0s;
+      position: absolute;
 
     }
 }
+
 #logo{
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  // flex-direction: column;
+  // flex-wrap: wrap;
   color: $logo-font-color;
+  align-items: center;
+  // text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 15px;
   vertical-align: top;
-  width: 50px;
-  height: 50px;
-  margin-right: 20px;
-  margin-top: 15px
-  
- 
+  // width: 50px;
+  // height: 50px;
+  // margin-right: 20px;
+  // margin-top: 15px
+  a{
+    color: $font-color-navbar
+  }
 }
 
 .logo-image{
@@ -221,6 +227,8 @@ nav{
   height: 46px;
   overflow: hidden;
   margin-top: -6px;
+  margin: 10px 15px 5px 10px;
+
 }
 
 .nav-menu{
@@ -307,6 +315,54 @@ nav{
 .nav-active{
   transform:translateX(0%);
 }
+/* start of phone styles */
+@media screen and (max-width: 479px) {
+  body{
+    min-height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+  #hero{
+    position: relative;
+    top: 30px;
+    background-size: cover;
+    background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  }
+  
+  .nav-menu{
+    
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    // top: 8vh;
+    background-color: $background-navbar;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    /* justify-content: center; */
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-menu li{
+    opacity: 0;
+  }
+  .hambicon{
+    display: block;
+    
+  }
+
+
+}
+
 
 
 @keyframes navLinkFade{
@@ -323,10 +379,7 @@ nav{
 
 
 
-
-// /**MODAL**/
-
-  /*--------------------------------------------------------------
+/*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
 /* Sections Common
@@ -337,7 +390,7 @@ nav{
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin: 30px 0;
 
   }
   
@@ -349,17 +402,21 @@ nav{
   .section-title-divider {
     width: 50px;
     height: 3px;
-    background: #03C4EB;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    background: $title-divider;
+    margin: 10px auto;
+    // margin-bottom: 20px;
   }
   
   /* Get Started Section
 --------------------------------*/
-// #about {
-//     // background: #fff;
-//     padding: 80px 0;
-//   }
+#about {
+    background: #fff;
+    padding: 40px 0;
+  
+  }
+  .container{
+    position: unset;
+  }
   
 //   #about .about-img {
 //     overflow: hidden;
@@ -369,15 +426,15 @@ nav{
 //     max-width: 100%;
 //   }
   
-  @media (max-width: 768px) {
-    #about .about-img {
-      height: auto;
-    }
-    #about .about-img img {
-      margin-left: 0;
-      padding-bottom: 30px;
-    }
-  }
+  // @media (max-width: 768px) {
+  //   #about .about-img {
+  //     height: auto;
+  //   }
+  //   #about .about-img img {
+  //     margin-left: 0;
+  //     padding-bottom: 30px;
+  //   }
+  // }
   
 //   #about .about-content {
 //     background: #fff;
@@ -400,7 +457,11 @@ nav{
   
   /* Services Section
 --------------------------------*/
+#services {
+  background: #fff;
+  padding: 40px 0;
 
+}
 
 #services .service-item {
   margin-bottom: 20px;
@@ -438,11 +499,20 @@ nav{
 #services .service-title a {
   color: #111;
 }
+.service-description .radar{
+  display: flex;
+  flex-direction: column;
+}
 
 #services .service-description {
+
   margin-left: 80px;
   line-height: 24px;
+  #radar{
+    float: right;
+  }
 }
+
   /*--------------------------------------------------------------
 # Inside modal
 --------------------------------------------------------------*/

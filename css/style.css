@@ -20,8 +20,11 @@ body {
   display: table;
   width: 100%;
   height: 100vh;
-  background: url("../imgs/horizontalimage.jpg") top center;
+  background: url("../imgs/americapicture.jpg") top center;
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 @media (min-width: 1024px) {
@@ -143,7 +146,7 @@ body {
 }
 
 #header #logo h1 a, #header #logo h1 a:hover {
-  color: #fff;
+  color: #FECEAB;
 }
 
 #header #logo img {
@@ -165,16 +168,12 @@ body {
     max-height: 40px;
   }
 }
-.is-sticky #header {
-  background: rgba(0, 0, 0, 0.85);
-}
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 8vh;
   background-color: #2a363b;
@@ -182,23 +181,22 @@ nav {
   transition: background-color 1s ease 0s;
 }
 nav .transparent {
-  background-color: 42, 54, 59, 0.25;
+  background-color: 42, 54, 59, 0.1;
   transition: background-color 1s ease 0s;
+  position: absolute;
 }
 
 #logo {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   color: #E84A5F;
+  align-items: center;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 15px;
   vertical-align: top;
-  width: 50px;
-  height: 50px;
-  margin-right: 20px;
-  margin-top: 15px;
+}
+#logo a {
+  color: #FECEAB;
 }
 
 .logo-image {
@@ -206,6 +204,7 @@ nav .transparent {
   height: 46px;
   overflow: hidden;
   margin-top: -6px;
+  margin: 10px 15px 5px 10px;
 }
 
 .nav-menu {
@@ -290,6 +289,51 @@ nav .transparent {
   transform: translateX(0%);
 }
 
+/* start of phone styles */
+@media screen and (max-width: 479px) {
+  body {
+    min-height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  #hero {
+    position: relative;
+    top: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .nav-menu {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    background-color: #2a363b;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    /* justify-content: center; */
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-menu li {
+    opacity: 0;
+  }
+
+  .hambicon {
+    display: block;
+  }
+}
 @keyframes navLinkFade {
   from {
     opacity: 0;
@@ -311,7 +355,7 @@ nav .transparent {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin: 30px 0;
 }
 
 .section-description {
@@ -322,25 +366,28 @@ nav .transparent {
 .section-title-divider {
   width: 50px;
   height: 3px;
-  background: #03C4EB;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  background: #99B898;
+  margin: 10px auto;
 }
 
 /* Get Started Section
 --------------------------------*/
-@media (max-width: 768px) {
-  #about .about-img {
-    height: auto;
-  }
-
-  #about .about-img img {
-    margin-left: 0;
-    padding-bottom: 30px;
-  }
+#about {
+  background: #fff;
+  padding: 40px 0;
 }
+
+.container {
+  position: unset;
+}
+
 /* Services Section
 --------------------------------*/
+#services {
+  background: #fff;
+  padding: 40px 0;
+}
+
 #services .service-item {
   margin-bottom: 20px;
 }
@@ -378,9 +425,17 @@ nav .transparent {
   color: #111;
 }
 
+.service-description .radar {
+  display: flex;
+  flex-direction: column;
+}
+
 #services .service-description {
   margin-left: 80px;
   line-height: 24px;
+}
+#services .service-description #radar {
+  float: right;
 }
 
 /*--------------------------------------------------------------
