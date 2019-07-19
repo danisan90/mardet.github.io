@@ -404,7 +404,7 @@ nav{
     height: 3px;
     background: $title-divider;
     margin: 10px auto;
-    // margin-bottom: 20px;
+    margin-bottom: 20px;
   }
   
   /* Get Started Section
@@ -490,14 +490,19 @@ nav{
 }
 
 #services .service-title {
-  margin-left: 80px;
+  text-align: center;
   font-weight: 700;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 #services .service-title a {
+  
   color: #111;
+
+}
+#services .service-title a:hover{
+  color:orange;
 }
 .service-description .radar{
   display: flex;
@@ -505,13 +510,59 @@ nav{
 }
 
 #services .service-description {
-
+  display: flex;
   margin-left: 80px;
   line-height: 24px;
-  #radar{
+  .img-container{
     float: right;
+    display: flex;
+    height: 50%;
+    padding: 0 10px 10px
+  }
+  .radar{
+    p{
+      text-align: center;
+    }
   }
 }
+
+
+.columns-sist {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.radar-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  background-color: blue;
+  // height: 100px;
+}
+
+.some-page-wrapper {
+  margin: 15px;
+  background-color: red;
+}
+
+.green-column {
+  background-color: green;
+  // height: 100px;
+}
+
+
+
+
 
   /*--------------------------------------------------------------
 # Inside modal

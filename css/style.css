@@ -368,6 +368,7 @@ nav .transparent {
   height: 3px;
   background: #99B898;
   margin: 10px auto;
+  margin-bottom: 20px;
 }
 
 /* Get Started Section
@@ -415,7 +416,7 @@ nav .transparent {
 }
 
 #services .service-title {
-  margin-left: 80px;
+  text-align: center;
   font-weight: 700;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -425,17 +426,59 @@ nav .transparent {
   color: #111;
 }
 
+#services .service-title a:hover {
+  color: orange;
+}
+
 .service-description .radar {
   display: flex;
   flex-direction: column;
 }
 
 #services .service-description {
+  display: flex;
   margin-left: 80px;
   line-height: 24px;
 }
-#services .service-description #radar {
+#services .service-description .img-container {
   float: right;
+  display: flex;
+  height: 50%;
+  padding: 0 10px 10px;
+}
+#services .service-description .radar p {
+  text-align: center;
+}
+
+.columns-sist {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.radar-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  background-color: blue;
+}
+
+.some-page-wrapper {
+  margin: 15px;
+  background-color: red;
+}
+
+.green-column {
+  background-color: green;
 }
 
 /*--------------------------------------------------------------
