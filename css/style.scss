@@ -720,22 +720,25 @@ background: none;
 /*--------------------------------------------------------------
 # Contact form
 --------------------------------------------------------------*/
-#contact{
+.container-contact{
   background: url('../imgs/americapicture.jpg') top center;
   background-size: cover;
+  opacity: 0.8;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     padding: 20px;
 }
+
 input[type=text], select, textarea {
-  width: 100%;
+  width: 75%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
 }
 label {
+  color:black;
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
@@ -752,6 +755,8 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 .col-25 {
+  display: flex;
+  justify-content: center;
   float: left;
   width: 25%;
   margin-top: 6px;
@@ -761,6 +766,10 @@ input[type=submit]:hover {
   float: left;
   width: 75%;
   margin-top: 6px;
+}
+.enviar-btn{
+  display: flex;
+  justify-content: center;
 }
 
 /* Clear floats after the columns */
