@@ -41,7 +41,7 @@
        
           <div class="actions">
               <a href="#about" class="btn-get-started">Nosotros</a>
-              <a href="#services" class="btn-services">Sistemas</a>
+              <a href="#contact" class="btn-services">Contacto</a>
           </div>
           </div>
       </div>
@@ -345,109 +345,86 @@
   ============================-->
 
 
-      <section id="desarrollos">
-        <div class="container wow fadeInUp">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="section-title">Desarrollos
-              </h3>
-              <div class="section-title-divider"></div>
-              
-           
-
-
-
-            </div>
-          </div>
+  <section id="desarrollos">
     
-          <div class="row">
-            <div class="col-md-4 service-item">
-              <div class="service-icon"><i class="fa fa-desktop"></i></div>
-              <h4 class="service-title"><a href="">Sistema de presentacion, archivo y graficado de datos de direccion y velocidad del 
-                viento basado en PC</a></h4>
-              <p class="service-description">Puede ser utilizado con cualquier tipo de sensor de direccion
-                y velocidad del viento, a traves de insterfases especialmente desarrolladas por nuestra 
-                empresa.</p>
-            </div>
-            <div class="col-md-4 service-item">
-              <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
-              <h4 class="service-title"><a href="">Sensores de direccion y velocidad del viento</a></h4>
-              <p class="service-description">Estamos desarrollando, y tendremos disponibles a la brevedad, sensores de medicion de direccion
-                y velocidad del viento integramente fabricados en el pais, con la ultima tecnologia disponible.
-                </p>
+      <div class="col-md-12">
+          <h3 class="section-title">Desarrollos</h3>
+          <div class="section-title-divider"></div>
+        </div>
+      
+        <div class='some-page-wrapper'>
+          <div class='row'>
+            <div class='column-des'>
+                <div class="col-md-4 service-item"><p>Desarrollos para sistemas de comunicación y alarma de descargas eléctricas en aeropuertos.</p>
+                </div>
+                  <div class="carousel-container" >
+                  <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                  <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                    <div class="carousel-slide">
+                        <img class="desaImag" src="imgs/image3.jpg" id="lastClone" alt="">
+                        <img class="desaImag" src="imgs/image1.jpg" alt="">
+                        <img class="desaImag" src="imgs/image2.jpg" alt="">
+                        <img class="desaImag" src="imgs/image3.jpg" alt="">
+                        <img class="desaImag" src="imgs/image1.jpg" id="firstClone" alt="">
+                    </div>
+                </div>   
             </div>
           </div>
         </div>
-      </section>
+    
+  </section>
 
   
-
-     <!--==========================
+  <!--==========================
   Contact Section
   ============================-->
   <section id="contact">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
+      <div class="col-md-12">
           <h3 class="section-title">CONTACTO</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Contactenos</p>
-        </div>
+          <p class="section-description">Envienos su consulta</p>
       </div>
-
-      <div class="row">
-        <div class="col-md-3 col-md-push-2">
-          <div class="info">
-            <div>
-              <i class="fa fa-map-marker"></i>
-              <p>A108 Adam Street<br>New York, NY 535022</p>
+      <div class="container-contact">
+        <form action="">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Nombre</label>
             </div>
-
-            <div>
-              <i class="fa fa-envelope"></i>
-              <p>info@example.com</p>
+            <div class="col-75">
+                <input type="text" name="" id="fname">
             </div>
-
-            <div>
-              <i class="fa fa-phone"></i>
-              <p>+1 5589 55488 55s</p>
+          </div>
+          <div class="row">
+              <div class="col-25">
+                  <label for="lname">Apellido</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="lastname" id="lname" placeholder="Apellido">
+                </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="companie">Empresa</label>
             </div>
+            <div class="col-75"><input type="text" name="companie" id="companiename">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Comentarios</label>
+            </div>
+            <div class="col-75">
+              <textarea name="sbject" id="subject" cols="30" rows="10"></textarea></div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
 
           </div>
-        </div>
-        <div class="field">
-          <p class="control has-icons-left has-icons-right">
-            <input class="input" type="email" placeholder="Email">
-            <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
-            </span>
-            <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
-            </span>
-          </p>
-        </div>
-        <div class="field">
-          <p class="control has-icons-left">
-            <input class="input" type="password" placeholder="Password">
-            <span class="icon is-small is-left">
-              <i class="fas fa-lock"></i>
-            </span>
-          </p>
-        </div>
-        <div class="field">
-          <p class="control">
-            <button class="button is-success">
-              Login
-            </button>
-          </p>
-        </div>
-             
-             
-             
-            
-
+        </form>
       </div>
-    </div>
+    
+    
   </section>
   
  <!--==========================
