@@ -27,11 +27,13 @@ body {
   background-attachment: fixed;
 }
 
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
+.encab-description {
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+  padding: 5px 0;
 }
+
 #hero .hero-logo {
   margin: 20px;
 }
@@ -58,17 +60,26 @@ body {
   font-size: 45px;
 }
 
+#hero h2 {
+  color: #999;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+
+  .encab-description p {
+    font-size: 10px;
+  }
+}
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
   }
 }
-#hero h2 {
-  color: #999;
-  margin-bottom: 50px;
-}
-
 @media (max-width: 768px) {
   #hero h2 {
     font-size: 24px;
@@ -690,6 +701,10 @@ input[type=submit]:hover {
   background: #111;
   padding: 30px 0;
   color: #fff;
+}
+
+.back-to-top {
+  display: none;
 }
 
 #footer .copyright {
