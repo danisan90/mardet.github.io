@@ -79,16 +79,17 @@ body{
     #hero {
       background-attachment: fixed;
     }
-    .encab-description{
-      p{
-        font-size: 10px;
-      }
-    }
+    
   }
   @media (max-width: 768px) {
     #hero h1 {
       font-size: 28px;
       line-height: 36px;
+    }
+    .encab-description{
+      p{
+        font-size: 10px;
+      }
     }
   }
   
