@@ -1,10 +1,10 @@
-$background-navbar: rgb(42, 54, 59);
+$background-navbar: #17252A;
 $background-navbar-transparente:(42, 54, 59,.1);
 $font-color-navbar: #FECEAB ;
 $logo-font-color: #E84A5F;
 $hover-font-color-navbar: #99B898;
 $background-button-navbar: #d6482f;
-$btn-get-started-background: #f36767;
+$btn-get-started-background: #17252A;
 $modal-background-background-color:#f36767;
 $title-divider: #99B898; 
 
@@ -86,9 +86,12 @@ body{
       font-size: 28px;
       line-height: 36px;
     }
+    
     .encab-description{
+      width: 400px;
       p{
-        font-size: 10px;
+        font-size: 1.5vw;
+        top: 27vw;
       }
     }
   }
@@ -438,19 +441,26 @@ nav{
 //     max-width: 100%;
 //   }
   
-  // @media (max-width: 768px) {
-  //   #about .about-img {
-  //     height: auto;
-  //   }
-  //   #about .about-img img {
-  //     margin-left: 0;
-  //     padding-bottom: 30px;
-  //   }
-  // }
+  @media (max-width: 768px) {
+    #about .bd-notification {
+      font-size: 2vw;
+    }
+
+
+    .columns {
+      margin-left: .75rem; 
+      margin-right: .75rem; 
+      margin-top: none;
+    }
+      
+  }
   
-//   #about .about-content {
-//     background: #fff;
-//   }
+  #about .about-content {
+    text-align: justify;
+    font-weight: 300;
+    // font-size: 18px;
+    font-size: 1.125rem;
+  }
   
 //   #about .about-title {
 //     color: #333;
@@ -503,38 +513,40 @@ nav{
 
 #services .service-title {
   text-align: center;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 15px;
   text-transform: uppercase;
+  font-size: 1.125rem;
 }
 
-#services .service-title a {
-  
-  color: #111;
 
-}
-#services .service-title a:hover{
-  color:orange;
-}
 .service-description .radar{
   display: flex;
-  flex-direction: column;
+  .radar-content{
+    display: flex;
+  
+  }
 }
 
 #services .service-description {
   display: flex;
-  margin-left: 80px;
+  // margin-left: 80px;
   line-height: 24px;
   .img-container{
     float: right;
     display: flex;
+    width: 50%;
     height: 50%;
     padding: 0 10px 10px
   }
-  .radar{
-    p{
-      text-align: center;
-    }
+
+}
+.radar-content{
+  .radar-descrip{
+    text-align: justify;
+    font-weight: 300;
+    // font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 
@@ -558,22 +570,52 @@ nav{
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  background-color: $hover-font-color-navbar;
+  // background-color: $hover-font-color-navbar;
   // height: 100px;
+  padding: 5px;
+  margin: 20px 0;
 }
-
+.radar-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // .video-face-descr{
+  //   font-size: 10px;
+  //   background: #eee;
+  //   padding: 5px;
+  // }
+}
+article{
+  background:  #FECEAB;
+  align-content: center;
+  width:560px;
+  height:400px;
+  padding: 10px;
+  iframe{
+    width: 100%;
+    height: 100%;
+    
+  }
+  figcaption {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    font-style: italic;
+    font-size: 14px;
+    orphans: 2;
+}
+}
 .some-page-wrapper {
   margin: 15px;
-  background-color: red;
+  
 }
 
-.green-column {
-  background-color: green;
+.med-column {
+  
+
+  margin: 20px 0;
   // height: 100px;
 }
-
-
-
 
 
   /*--------------------------------------------------------------
@@ -581,7 +623,10 @@ nav{
 --------------------------------------------------------------*/
 
 .wrap-collabsible {
-  margin-bottom: 1.2rem 0;
+  // margin-bottom: 1.2rem 0;
+  width: 90%;
+  margin: 5px;
+  
 }
 
 input[type='checkbox'] {
@@ -593,14 +638,14 @@ input[type='checkbox'] {
 
   font-weight: bold;
   font-family: monospace;
-  font-size: 1.2rem;
+  // font-size: 1.2rem;
   text-transform: uppercase;
   text-align: center;
 
   padding: 1rem;
 
-  color: #A77B0E;
-  background: #FAE042;
+  color: #17252A;
+  background: #2B7A78;
 
   cursor: pointer;
 
@@ -609,7 +654,7 @@ input[type='checkbox'] {
 }
 
 .lbl-toggle:hover {
-  color: #7C5A0B;
+  color: #3AAFA9;
 }
 
 .lbl-toggle::before {
@@ -646,8 +691,8 @@ input[type='checkbox'] {
 }
 
 .collapsible-content .content-inner {
-  background: rgba(250, 224, 66, .2);
-  border-bottom: 1px solid rgba(250, 224, 66, .45);
+  background: rgba(23,37,42, .2);
+  border-bottom: 1px solid rgba(23,37,42, .45);
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
   padding: .5rem 1rem;
@@ -655,6 +700,12 @@ input[type='checkbox'] {
 
 // ------------------DESARROLLOS-----------
 // ----------------------------------------
+#desarrollos {
+  background: #fff;
+  padding: 40px 0;
+
+}
+
 h5 {
   display: inline-block;
   padding: 10px;
@@ -727,6 +778,33 @@ font-size: 30px;
 border:none;
 background: none;
 }
+
+// ENLACES
+
+.column-enl-one{
+  display: flex;
+  
+  align-items: center;
+  // flex-basis: 100%;
+  flex: 1;
+  background-color: $hover-font-color-navbar;
+
+}
+.container-enlac {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.column-enl-two{
+  display: flex;
+  align-items: center;
+  // flex-basis: 100%;
+  flex: 1;
+  background-color: $hover-font-color-navbar;
+
+}
+
 
 /*--------------------------------------------------------------
 # Contact form

@@ -76,8 +76,12 @@ body {
     line-height: 36px;
   }
 
+  .encab-description {
+    width: 400px;
+  }
   .encab-description p {
-    font-size: 10px;
+    font-size: 1.5vw;
+    top: 27vw;
   }
 }
 @media (max-width: 768px) {
@@ -109,8 +113,8 @@ body {
 }
 
 #hero .btn-get-started {
-  background: #f36767;
-  border: 2px solid #f36767;
+  background: #17252A;
+  border: 2px solid #17252A;
   color: #fff;
 }
 
@@ -126,15 +130,15 @@ body {
 }
 
 #hero .btn-services:hover {
-  background: #f36767;
-  border: 2px solid #f36767;
+  background: #17252A;
+  border: 2px solid #17252A;
 }
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #2a363b;
+  background: #17252A;
   padding: 20px 0;
   height: 90px;
   display: flex;
@@ -187,7 +191,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   min-height: 8vh;
-  background-color: #2a363b;
+  background-color: #17252A;
   font-family: "Poppins", sans-serif;
   transition: background-color 1s ease 0s;
 }
@@ -279,7 +283,7 @@ nav .transparent {
     position: absolute;
     right: 0px;
     height: 92vh;
-    background-color: #2a363b;
+    background-color: #17252A;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -328,7 +332,7 @@ nav .transparent {
     position: absolute;
     right: 0px;
     height: 92vh;
-    background-color: #2a363b;
+    background-color: #17252A;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -394,6 +398,23 @@ nav .transparent {
   position: unset;
 }
 
+@media (max-width: 768px) {
+  #about .bd-notification {
+    font-size: 2vw;
+  }
+
+  .columns {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    margin-top: none;
+  }
+}
+#about .about-content {
+  text-align: justify;
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
 /* Services Section
 --------------------------------*/
 #services {
@@ -429,37 +450,35 @@ nav .transparent {
 
 #services .service-title {
   text-align: center;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 15px;
   text-transform: uppercase;
-}
-
-#services .service-title a {
-  color: #111;
-}
-
-#services .service-title a:hover {
-  color: orange;
+  font-size: 1.125rem;
 }
 
 .service-description .radar {
   display: flex;
-  flex-direction: column;
+}
+.service-description .radar .radar-content {
+  display: flex;
 }
 
 #services .service-description {
   display: flex;
-  margin-left: 80px;
   line-height: 24px;
 }
 #services .service-description .img-container {
   float: right;
   display: flex;
+  width: 50%;
   height: 50%;
   padding: 0 10px 10px;
 }
-#services .service-description .radar p {
-  text-align: center;
+
+.radar-content .radar-descrip {
+  text-align: justify;
+  font-weight: 300;
+  font-size: 1.125rem;
 }
 
 .columns-sist {
@@ -481,23 +500,50 @@ nav .transparent {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  background-color: #99B898;
+  padding: 5px;
+  margin: 20px 0;
+}
+
+.radar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  background: #FECEAB;
+  align-content: center;
+  width: 560px;
+  height: 400px;
+  padding: 10px;
+}
+article iframe {
+  width: 100%;
+  height: 100%;
+}
+article figcaption {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+  font-style: italic;
+  font-size: 14px;
+  orphans: 2;
 }
 
 .some-page-wrapper {
   margin: 15px;
-  background-color: red;
 }
 
-.green-column {
-  background-color: green;
+.med-column {
+  margin: 20px 0;
 }
 
 /*--------------------------------------------------------------
 # Inside modal
 --------------------------------------------------------------*/
 .wrap-collabsible {
-  margin-bottom: 1.2rem 0;
+  width: 90%;
+  margin: 5px;
 }
 
 input[type=checkbox] {
@@ -508,19 +554,18 @@ input[type=checkbox] {
   display: block;
   font-weight: bold;
   font-family: monospace;
-  font-size: 1.2rem;
   text-transform: uppercase;
   text-align: center;
   padding: 1rem;
-  color: #A77B0E;
-  background: #FAE042;
+  color: #17252A;
+  background: #2B7A78;
   cursor: pointer;
   border-radius: 7px;
   transition: all 0.25s ease-out;
 }
 
 .lbl-toggle:hover {
-  color: #7C5A0B;
+  color: #3AAFA9;
 }
 
 .lbl-toggle::before {
@@ -555,11 +600,16 @@ input[type=checkbox] {
 }
 
 .collapsible-content .content-inner {
-  background: rgba(250, 224, 66, 0.2);
-  border-bottom: 1px solid rgba(250, 224, 66, 0.45);
+  background: rgba(23, 37, 42, 0.2);
+  border-bottom: 1px solid rgba(23, 37, 42, 0.45);
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
   padding: 0.5rem 1rem;
+}
+
+#desarrollos {
+  background: #fff;
+  padding: 40px 0;
 }
 
 h5 {
@@ -620,6 +670,27 @@ h5 {
   /* cursor: pointer; */
   border: none;
   background: none;
+}
+
+.column-enl-one {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  background-color: #99B898;
+}
+
+.container-enlac {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.column-enl-two {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  background-color: #99B898;
 }
 
 /*--------------------------------------------------------------
