@@ -421,6 +421,11 @@ nav{
     margin: 10px auto;
     margin-bottom: 20px;
   }
+  @media (max-width: 768px) {
+    .section-title{
+      margin: 30px 75px;
+    }
+  }
   
   /* Get Started Section
 --------------------------------*/
@@ -447,6 +452,11 @@ nav{
   -webkit-column-gap: 4em;
   -moz-column-gap: 4em;
   column-gap: 4em;
+  
+    .more-read{
+      display: none;
+      }
+
 }
 @media (max-width: 1024px) {
   .columns-about{
@@ -457,7 +467,9 @@ nav{
   
   @media (max-width: 768px) {
     #about .bd-notification {
-      font-size: 1.125rem;
+      font-size: .99rem;
+      margin-left: .5rem; 
+      margin-right: .75rem;
     }
 
 
@@ -468,8 +480,17 @@ nav{
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1;
+      .more-read{
+        display: block;
+        text-decoration: none;
+  
+      }
+      #more{
+        display: none;
+      }
       
     }
+   
       
   }
   

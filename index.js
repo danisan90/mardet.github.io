@@ -42,46 +42,41 @@ const menu = () => {
   navSlide();
 
 }
+// ---------REED MORE---------------------
+
+function leerMas() {
+  // var linkMore = document.getElementById("linkMore");
+  var moreText = document.getElementById("more");
+  var linkMore = document.getElementById("linkMore");
+
+  if (moreText.style.display === "none") {
+    // linkMore.style.display = "inline";
+    moreText.style.display = "inline";
+
+    linkMore.innerHTML = 'Leer menos';
+
+     
+   
+  } else {
+    linkMore.innerHTML = 'Leer mas';
+    moreText.style.display = "none";
+  
+  }
+}
+function mobileView(x) {
+  if (x.matches) { // If media query matches
+      leerMas();
+  } 
+}
+var x = window.matchMedia("(max-width: 768px)")
+mobileView(x) // Call listener function at run time
+x.addListener(mobileView)
+// ------------------------------
 menu();
+
  
 
-// ------------------------------
-    $(".modal-button.radar").click(function() {
-      $(".modal.radar").addClass("is-active");  
-    });
-    
-    $(".delete").click(function() {
-       $(".modal.radar").removeClass("is-active");
-    });
 
-
-    $(".modal-button.medicion").click(function() {
-      $(".modal.medicion").addClass("is-active");  
-    });
-    
-    $(".delete").click(function() {
-       $(".modal.medicion").removeClass("is-active");
-    });
-
-
-    $(".modal-button.recepcion").click(function() {
-      $(".modal.recepcion").addClass("is-active");  
-    });
-    
-    $(".delete").click(function() {
-       $(".modal.recepcion").removeClass("is-active");
-    });
-
-
-    $(".modal-button.info").click(function() {
-      $(".modal.info").addClass("is-active");  
-    });
-    
-    $(".delete").click(function() {
-       $(".modal.info").removeClass("is-active");
-    });
-
-// ------------------------------
 
 // CAROUSEL
 
@@ -97,7 +92,7 @@ const prevBtn =  document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
 
 
-//Counte
+//Counter
 let counter = 1;
 const size = carouselImages[0].clientWidth;
 

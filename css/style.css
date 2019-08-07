@@ -387,6 +387,11 @@ nav .transparent {
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  .section-title {
+    margin: 30px 75px;
+  }
+}
 /* Get Started Section
 --------------------------------*/
 #about {
@@ -412,6 +417,9 @@ nav .transparent {
   -moz-column-gap: 4em;
   column-gap: 4em;
 }
+.columns-about .more-read {
+  display: none;
+}
 
 @media (max-width: 1024px) {
   .columns-about {
@@ -421,7 +429,9 @@ nav .transparent {
 }
 @media (max-width: 768px) {
   #about .bd-notification {
-    font-size: 1.125rem;
+    font-size: 0.99rem;
+    margin-left: 0.5rem;
+    margin-right: 0.75rem;
   }
 
   .columns-about {
@@ -431,6 +441,13 @@ nav .transparent {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
+  }
+  .columns-about .more-read {
+    display: block;
+    text-decoration: none;
+  }
+  .columns-about #more {
+    display: none;
   }
 }
 #about .about-content {
