@@ -389,7 +389,7 @@ nav .transparent {
 
 @media (max-width: 768px) {
   .section-title {
-    margin: 30px 0px;
+    margin: 15px 0px;
   }
 }
 /* Get Started Section
@@ -432,6 +432,10 @@ nav .transparent {
     font-size: 0.99rem;
     margin-left: 0.5rem;
     margin-right: 0.75rem;
+  }
+
+  .section-title-divider {
+    margin-bottom: 0;
   }
 
   .columns-about {
@@ -557,6 +561,15 @@ nav .transparent {
     margin-right: 0.75rem;
     margin-top: none;
   }
+  .radar-column .service-title {
+    margin-top: 0;
+  }
+
+  #services .service-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (max-width: 479px) {
   .radar-column {
@@ -576,7 +589,10 @@ nav .transparent {
   }
   .radar-column .radar-content article {
     width: 100%;
-    height: 300px;
+    height: 350px;
+    font-size: 0.99rem;
+    margin-left: 0.5rem;
+    margin-right: 0.75rem;
   }
 }
 article {
@@ -608,8 +624,8 @@ article figcaption {
 }
 
 @media (max-width: 768px) {
-  .service-title {
-    margin: 30px 75px;
+  .med-column .service-title {
+    margin: 0 75px;
   }
 }
 /*--------------------------------------------------------------
