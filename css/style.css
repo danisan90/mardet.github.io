@@ -681,6 +681,11 @@ input[type=checkbox] {
   padding: 0.5rem 1rem;
 }
 
+@media (max-width: 768px) {
+  .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 800px;
+  }
+}
 #desarrollos {
   background: #fff;
   padding: 20px 0;

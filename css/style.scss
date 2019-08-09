@@ -782,6 +782,13 @@ input[type='checkbox'] {
   border-bottom-right-radius: 7px;
   padding: .5rem 1rem;
 }
+@media (max-width: 768px) {
+  .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 800px;
+  }
+   
+  }
+
 
 // ------------------DESARROLLOS-----------
 // ----------------------------------------
