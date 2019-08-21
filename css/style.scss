@@ -286,11 +286,15 @@ nav{
 }
 
 @media screen and (max-width: 991px) {
-    body{
+    html, body{
       min-height: 100%;
       margin: 0;
       overflow-x: hidden;
+      
     }
+    
+      
+      
     nav{
       width: 100%;
       position: absolute;
@@ -306,12 +310,12 @@ nav{
       position: absolute;
       right: 0px;
       height: 92vh;
-      // top: 8vh;
+      top: 8vh;
       background-color: $background-navbar;
      
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      align-items: center;
       width: 50%;
       /* justify-content: center; */
       transform: translateX(100%);
@@ -322,14 +326,13 @@ nav{
     }
     .hambicon{
       display: block;
+      margin-right: 20px;
       
     }
 
 
 }
-.nav-active{
-  transform:translateX(0%);
-}
+
 /* start of phone styles */
 @media screen and (max-width: 479px) {
   body{
@@ -372,12 +375,15 @@ nav{
   }
   .hambicon{
     display: block;
+    margin-right: 20px;
     
   }
 
 
 }
-
+.nav-active{
+  transform:translateX(0%);
+}
 
 
 @keyframes navLinkFade{
