@@ -406,6 +406,7 @@ nav{
     text-align: center;
     font-weight: 700;
     margin: 30px 0;
+    padding-top:20px;
 
   }
   
@@ -442,7 +443,6 @@ nav{
   text-align: justify;
   font-weight: 300;
   font-size: 1.125rem;
-  
   -webkit-column-count: 2;
   -moz-column-count: 2;
        column-count: 2;
@@ -608,6 +608,10 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: center;
+  .radar-descrip{
+    margin: 0 65px;
+    margin-bottom: 5px;
+    }
   // .video-face-descr{
   //   font-size: 10px;
   //   background: #eee;
@@ -678,24 +682,28 @@ article{
     height: 100%;
     
   }
-  figcaption {
-    display: block;
-    text-align: center;
-    margin: 10px 0;
-    font-style: italic;
-    font-size: 14px;
-    orphans: 2;
-}
+//   figcaption {
+//     display: block;
+//     text-align: center;
+//     margin: 10px 0;
+//     font-style: italic;
+//     font-size: 14px;
+//     orphans: 2;
+// }
 }
 .some-page-wrapper {
-  margin: 15px;
+  margin:15px;
   
 }
-
+.enlaces-content{
+  background-color: #3AAFA9;
+}
 .med-column {
   
 
-  margin: 20px 0;
+  margin: 20px 75px;
+  margin-bottom: 5px;
+
   // height: 100px;
 }
 
@@ -706,8 +714,32 @@ article{
   }
 }
 }
+.recep-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  // background-color: $hover-font-color-navbar;
+  // height: 100px;
+  padding: 5px;
+  margin: 20px 0;
+  .sat-descrip{
+    text-align: justify;
+    font-weight: 300;
+    font-size: 1.125rem;
+    margin: 0 65px;
+    margin-bottom: 5px;
+    }
+}
+.recep-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+}
   /*--------------------------------------------------------------
-# ACRODEON
+# ACORDEON
 --------------------------------------------------------------*/
 
 .wrap-collabsible {
@@ -819,21 +851,64 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // flex-basis: 100%;
   flex: 1;
-  background-color: $hover-font-color-navbar;
-  // padding: 0px;
-  // margin: 0px;
-  // box-sizing: border-box;
+ flex-basis: 100%;
+  // background-color: $hover-font-color-navbar;
   // height: 100px;
+  padding: 5px;
+  margin: 20px 0;
+
+  .desa-description{
+    text-align: justify;
+    font-weight: 300;
+    font-size: 1.125rem;
+    margin: 0 65px;
+    margin-bottom: 5px;
+  }
+ 
 }
+.desa-content{
+  display: flex;
+  
+}
+.prueba-centrado{
+  display: flex;
+  justify-content: center;
+}
+.article-slider{
+    background:  #FECEAB;
+    align-content: center;
+    width: 290px;
+    height: 450px;
+    padding: 10px;
+    p{
+      font-size: 14px;
+    }
+}
+// -------
+// AJUSTE PARA COLLAPSIBLE 
+// -------------------------
+.collapsible-content .desacontent {
+  background: rgba(23,37,42, .2);
+  border-bottom: 1px solid rgba(23,37,42, .45);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .1rem 1rem;
+  .descrip-imags{
+    font-size: 14px;
+    margin: 5px 0;
+  }
+}
+// -------
+// AJUSTE PARA COLLAPSIBLE 
+// -------------------------
 .carousel-container{
   display: flex;
   width: 250px;
   margin: 10px;
   overflow: hidden;
   position: relative;
-  border: 5px solid black;
+  // border: 5px solid black;
 }
 
 .carousel-slide{
@@ -854,25 +929,33 @@ h5 {
   top: 50%;
   z-index: 1;
   left: 5%;
-  font-size: 30px;
+  font-size: 25px;
   /* color: white; */
   // opacity: 0.5;
   /* cursor: pointer; */
   border:none;
   background: none;
 }
+#prevBtn:hover {
+ color: whitesmoke;
+  
+}
 #nextBtn{
 position: absolute;
 top: 50%;
 z-index: 1;
 right: 5%;
-font-size: 30px;
+font-size: 25px;
 /* color: white; */
 // opacity: 0.5;
 /* cursor: pointer; */
 border:none;
 background: none;
 }
+#nextBtn:hover {
+  color: whitesmoke;
+   
+ }
 
 // ENLACES
 
@@ -882,22 +965,21 @@ background: none;
   align-items: center;
   // flex-basis: 100%;
   flex: 1;
-  background-color: $hover-font-color-navbar;
-
+  margin: 10px 0;
 }
 .container-enlac {
   display: flex;
   justify-content: center;
   position: relative;
   width: 100%;
+  
 }
 .column-enl-two{
   display: flex;
   align-items: center;
   // flex-basis: 100%;
   flex: 1;
-  background-color: $hover-font-color-navbar;
-
+  margin: 10px 0;
 }
 
 

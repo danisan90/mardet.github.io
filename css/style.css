@@ -372,6 +372,7 @@ nav .transparent {
   text-align: center;
   font-weight: 700;
   margin: 30px 0;
+  padding-top: 20px;
 }
 
 .section-description {
@@ -554,6 +555,10 @@ nav .transparent {
   flex-direction: column;
   align-items: center;
 }
+.radar-content .radar-descrip {
+  margin: 0 65px;
+  margin-bottom: 5px;
+}
 
 @media (max-width: 768px) {
   .radar-column {
@@ -606,21 +611,18 @@ article iframe {
   width: 100%;
   height: 100%;
 }
-article figcaption {
-  display: block;
-  text-align: center;
-  margin: 10px 0;
-  font-style: italic;
-  font-size: 14px;
-  orphans: 2;
-}
 
 .some-page-wrapper {
   margin: 15px;
 }
 
+.enlaces-content {
+  background-color: #3AAFA9;
+}
+
 .med-column {
-  margin: 20px 0;
+  margin: 20px 75px;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 768px) {
@@ -628,8 +630,30 @@ article figcaption {
     margin: 0 75px;
   }
 }
+.recep-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 5px;
+  margin: 20px 0;
+}
+.recep-column .sat-descrip {
+  text-align: justify;
+  font-weight: 300;
+  font-size: 1.125rem;
+  margin: 0 65px;
+  margin-bottom: 5px;
+}
+
+.recep-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*--------------------------------------------------------------
-# ACRODEON
+# ACORDEON
 --------------------------------------------------------------*/
 .wrap-collabsible {
   width: 90%;
@@ -726,7 +750,48 @@ h5 {
   flex-direction: column;
   align-items: center;
   flex: 1;
-  background-color: #99B898;
+  flex-basis: 100%;
+  padding: 5px;
+  margin: 20px 0;
+}
+.column-des .desa-description {
+  text-align: justify;
+  font-weight: 300;
+  font-size: 1.125rem;
+  margin: 0 65px;
+  margin-bottom: 5px;
+}
+
+.desa-content {
+  display: flex;
+}
+
+.prueba-centrado {
+  display: flex;
+  justify-content: center;
+}
+
+.article-slider {
+  background: #FECEAB;
+  align-content: center;
+  width: 290px;
+  height: 450px;
+  padding: 10px;
+}
+.article-slider p {
+  font-size: 14px;
+}
+
+.collapsible-content .desacontent {
+  background: rgba(23, 37, 42, 0.2);
+  border-bottom: 1px solid rgba(23, 37, 42, 0.45);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 0.1rem 1rem;
+}
+.collapsible-content .desacontent .descrip-imags {
+  font-size: 14px;
+  margin: 5px 0;
 }
 
 .carousel-container {
@@ -735,7 +800,6 @@ h5 {
   margin: 10px;
   overflow: hidden;
   position: relative;
-  border: 5px solid black;
 }
 
 .carousel-slide {
@@ -748,11 +812,15 @@ h5 {
   top: 50%;
   z-index: 1;
   left: 5%;
-  font-size: 30px;
+  font-size: 25px;
   /* color: white; */
   /* cursor: pointer; */
   border: none;
   background: none;
+}
+
+#prevBtn:hover {
+  color: whitesmoke;
 }
 
 #nextBtn {
@@ -760,18 +828,22 @@ h5 {
   top: 50%;
   z-index: 1;
   right: 5%;
-  font-size: 30px;
+  font-size: 25px;
   /* color: white; */
   /* cursor: pointer; */
   border: none;
   background: none;
 }
 
+#nextBtn:hover {
+  color: whitesmoke;
+}
+
 .column-enl-one {
   display: flex;
   align-items: center;
   flex: 1;
-  background-color: #99B898;
+  margin: 10px 0;
 }
 
 .container-enlac {
@@ -785,7 +857,7 @@ h5 {
   display: flex;
   align-items: center;
   flex: 1;
-  background-color: #99B898;
+  margin: 10px 0;
 }
 
 /*--------------------------------------------------------------
