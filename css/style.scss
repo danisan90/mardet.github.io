@@ -290,11 +290,7 @@ nav{
       min-height: 100%;
       margin: 0;
       overflow-x: hidden;
-      
-    }
-    
-      
-      
+      }
     nav{
       width: 100%;
       position: absolute;
@@ -335,15 +331,19 @@ nav{
 
 /* start of phone styles */
 @media screen and (max-width: 479px) {
-  body{
+  // #wrapper {
+  //   overflow: hidden;
+  // }
+  body, html{
     min-height: 100%;
     margin: 0;
     overflow-x: hidden;
   }
   nav{
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
+    z-index: 1;
   }
   #hero{
     position: relative;
@@ -397,8 +397,6 @@ nav{
   }
 
 }
-
-
 
 /*--------------------------------------------------------------
 # Sections

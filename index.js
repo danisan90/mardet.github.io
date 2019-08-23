@@ -2,7 +2,8 @@
 //  ------------------------------------
 //  script para menu que se contrae
 //  ------------------------------------
- 
+
+
 const navSlide =() => {
   const burger = document.querySelector('.hambicon');
   const nav = document.querySelector('.nav-menu');
@@ -24,7 +25,8 @@ burger.addEventListener('click',() => {
   });
 });
 }
-$(document).ready(function() {
+// $(document).ready(function() {
+  function stickyMenu(){
   // Transition effect for navbar 
   $(window).scroll(function() {
     // checks if window is scrolled more than 500px, adds/removes solid class
@@ -36,7 +38,17 @@ $(document).ready(function() {
         $('.topnav').removeClass('sticky');
     }
   });
-});
+};
+var sizes = window.matchMedia("(min-width: 767px)")
+//is for 767 becasue i want to have the stickiy form since
+//768...
+function navmobile(sizes){
+  if (sizes.matches) { // If media query matches
+    stickyMenu();
+};
+};
+navmobile(sizes);
+// });
 
 const menu = () => {
   navSlide();
