@@ -334,7 +334,6 @@ nav .transparent {
     background-color: #17252A;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     width: 50%;
     /* justify-content: center; */
     transform: translateX(100%);

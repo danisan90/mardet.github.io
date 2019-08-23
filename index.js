@@ -8,7 +8,7 @@ const navSlide =() => {
   const burger = document.querySelector('.hambicon');
   const nav = document.querySelector('.nav-menu');
   const navLinks = document.querySelectorAll('.nav-menu li');
-
+  var linkCloseMenus = document.getElementsByClassName('actionlink');
   
 burger.addEventListener('click',() => {
       //Toggle Nav
@@ -24,8 +24,14 @@ burger.addEventListener('click',() => {
       }
   });
 });
+
+// close hamburger menu after click a
+$( '.nav-menu li a' ).on("click", function(){
+  burger.click();
+});
 }
-// $(document).ready(function() {
+
+
   function stickyMenu(){
   // Transition effect for navbar 
   $(window).scroll(function() {
@@ -40,7 +46,7 @@ burger.addEventListener('click',() => {
   });
 };
 var sizes = window.matchMedia("(min-width: 767px)")
-//is for 767 becasue i want to have the stickiy form since
+//is for 767 because i want to have the stickiy form since
 //768...
 function navmobile(sizes){
   if (sizes.matches) { // If media query matches
@@ -48,7 +54,6 @@ function navmobile(sizes){
 };
 };
 navmobile(sizes);
-// });
 
 const menu = () => {
   navSlide();
