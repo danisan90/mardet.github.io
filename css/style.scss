@@ -270,6 +270,7 @@ nav{
 
 .hambicon{
   display: none;
+  
   cursor: pointer;
   
 }
@@ -596,6 +597,7 @@ nav{
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: space-evenly;
 }
 
 .radar-column {
@@ -703,20 +705,17 @@ article{
   background-color: #3AAFA9;
 }
 .med-column {
-  
-
   margin: 20px 75px;
   margin-bottom: 5px;
 
-  // height: 100px;
 }
 
 @media (max-width: 768px) {
-  .med-column {
-  .service-title{
-    margin: 0 75px;
-  }
-}
+//   .med-column {
+//   .service-title{
+//     margin: 0 75px;
+//   }
+// }
 }
 .recep-column {
   display: flex;
@@ -742,6 +741,24 @@ article{
   
 
 }
+// .radar-content{
+//   .radar-descrip{
+//     text-align: justify;
+//     font-weight: 300;
+//     // font-size: 18px;
+//     font-size: 1.125rem;
+//   }
+// }
+@media (max-width: 768px) {
+  .recep-column{
+  .sat-descrip{
+    font-size: 0.99rem;
+    margin-left: 0.5rem;
+    margin-right: 0.75rem;
+    width:100%;
+  }
+  }
+  }
   /*--------------------------------------------------------------
 # ACORDEON
 --------------------------------------------------------------*/
@@ -825,8 +842,20 @@ input[type='checkbox'] {
   .toggle:checked + .lbl-toggle + .collapsible-content {
     max-height: 800px;
   }
-   
+  .wrap-collabsible {
+    // margin-bottom: 1.2rem 0;
+    width: 100%;
+    margin: 5px;
+    
   }
+  .med-column{
+   .service-description {
+     
+     width:375px;
+  
+   }
+  }
+}
 
 
 // ------------------DESARROLLOS-----------
@@ -889,6 +918,16 @@ h5 {
       font-size: 14px;
     }
 }
+@media (max-width: 768px) {
+  .desa-content{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+
+}
+
 // -------
 // AJUSTE PARA COLLAPSIBLE 
 // -------------------------

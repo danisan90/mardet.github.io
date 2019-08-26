@@ -542,6 +542,7 @@ nav .transparent {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: space-evenly;
 }
 
 .radar-column {
@@ -628,11 +629,6 @@ article iframe {
   margin-bottom: 5px;
 }
 
-@media (max-width: 768px) {
-  .med-column .service-title {
-    margin: 0 75px;
-  }
-}
 .recep-column {
   display: flex;
   flex-direction: column;
@@ -655,6 +651,14 @@ article iframe {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .recep-column .sat-descrip {
+    font-size: 0.99rem;
+    margin-left: 0.5rem;
+    margin-right: 0.75rem;
+    width: 100%;
+  }
+}
 /*--------------------------------------------------------------
 # ACORDEON
 --------------------------------------------------------------*/
@@ -728,6 +732,15 @@ input[type=checkbox] {
   .toggle:checked + .lbl-toggle + .collapsible-content {
     max-height: 800px;
   }
+
+  .wrap-collabsible {
+    width: 100%;
+    margin: 5px;
+  }
+
+  .med-column .service-description {
+    width: 375px;
+  }
 }
 #desarrollos {
   background: #fff;
@@ -785,6 +798,12 @@ h5 {
   font-size: 14px;
 }
 
+@media (max-width: 768px) {
+  .desa-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .collapsible-content .desacontent {
   background: rgba(23, 37, 42, 0.2);
   border-bottom: 1px solid rgba(23, 37, 42, 0.45);
