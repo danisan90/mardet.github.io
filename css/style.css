@@ -652,11 +652,33 @@ article iframe {
 }
 
 @media (max-width: 768px) {
+  .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 800px;
+  }
+
+  .wrap-collabsible {
+    width: 100%;
+    margin: 5px;
+  }
+}
+@media (max-width: 768px) {
   .recep-column .sat-descrip {
     font-size: 0.99rem;
     margin-left: 0.5rem;
     margin-right: 0.75rem;
     width: 100%;
+  }
+  .recep-column .recep-content .wrap-collabsible {
+    width: 100%;
+    margin: 5px;
+  }
+
+  .med-column .service-description {
+    width: 375px;
+  }
+  .med-column .service-description .wrap-collabsible {
+    width: 100%;
+    margin: 5px;
   }
 }
 /*--------------------------------------------------------------
@@ -728,20 +750,6 @@ input[type=checkbox] {
   padding: 0.5rem 1rem;
 }
 
-@media (max-width: 768px) {
-  .toggle:checked + .lbl-toggle + .collapsible-content {
-    max-height: 800px;
-  }
-
-  .wrap-collabsible {
-    width: 100%;
-    margin: 5px;
-  }
-
-  .med-column .service-description {
-    width: 375px;
-  }
-}
 #desarrollos {
   background: #fff;
   padding: 20px 0;
@@ -764,13 +772,22 @@ h5 {
 .column-des {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  flex: 1;
   flex-basis: 100%;
+  flex: 1;
   padding: 5px;
   margin: 20px 0;
 }
 .column-des .desa-description {
+  text-align: justify;
+  font-weight: 300;
+  font-size: 1.125rem;
+  margin: 0 65px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+}
+.column-des .desa-descrip {
   text-align: justify;
   font-weight: 300;
   font-size: 1.125rem;
@@ -782,26 +799,13 @@ h5 {
   display: flex;
 }
 
-.prueba-centrado {
-  display: flex;
-  justify-content: center;
-}
-
-.article-slider {
-  background: #FECEAB;
-  align-content: center;
-  width: 290px;
-  height: 450px;
-  padding: 10px;
-}
-.article-slider p {
-  font-size: 14px;
+.desas-sist {
+  text-align: -webkit-center;
 }
 
 @media (max-width: 768px) {
-  .desa-content {
-    display: flex;
-    flex-direction: column;
+  .column-des .desa-description .wrap-collabsible {
+    width: 100%;
   }
 }
 .collapsible-content .desacontent {
@@ -814,51 +818,6 @@ h5 {
 .collapsible-content .desacontent .descrip-imags {
   font-size: 14px;
   margin: 5px 0;
-}
-
-.carousel-container {
-  display: flex;
-  width: 250px;
-  margin: 10px;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel-slide {
-  display: flex;
-  width: 400px;
-}
-
-#prevBtn {
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  left: 5%;
-  font-size: 25px;
-  /* color: white; */
-  /* cursor: pointer; */
-  border: none;
-  background: none;
-}
-
-#prevBtn:hover {
-  color: whitesmoke;
-}
-
-#nextBtn {
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  right: 5%;
-  font-size: 25px;
-  /* color: white; */
-  /* cursor: pointer; */
-  border: none;
-  background: none;
-}
-
-#nextBtn:hover {
-  color: whitesmoke;
 }
 
 .column-enl-one {
