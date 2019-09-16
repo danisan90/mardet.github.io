@@ -580,7 +580,7 @@ nav{
     text-align: justify;
     font-weight: 300;
     // font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -614,10 +614,10 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: center;
-  .radar-descrip{
-    margin: 0 65px;
-    margin-bottom: 5px;
-    }
+  // .radar-descrip{
+  //   margin: 0 65px;
+  //   margin-bottom: 5px;
+  //   }
   // .video-face-descr{
   //   font-size: 10px;
   //   background: #eee;
@@ -715,21 +715,20 @@ article{
 }
 
 
-.recep-column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  // background-color: $hover-font-color-navbar;
-  // height: 100px;
-  padding: 5px;
-  margin: 20px 0;
+.radar-column {
+  // display: flex;
+  // flex-direction: column;
+  // flex-basis: 100%;
+  // flex: 1;
+  // // background-color: $hover-font-color-navbar;
+  // // height: 100px;
+  // padding: 5px;
+  // margin: 20px 0;
   .sat-descrip{
     text-align: justify;
     font-weight: 300;
-    font-size: 1.125rem;
-    margin: 0 65px;
-    margin-bottom: 5px;
+    font-size: 1.2rem;
+   margin-bottom: 5px;
     }
 }
 .recep-content{
@@ -784,7 +783,7 @@ article{
 
 .wrap-collabsible {
   // margin-bottom: 1.2rem 0;
-  width: 90%;
+  width: 100%;
   margin: 5px;
   
 }
@@ -858,7 +857,16 @@ input[type='checkbox'] {
   padding: .5rem 1rem;
 }
 
-
+.container-erth {
+  display: box;
+ position: relative;
+  width: 100%;
+  
+}
+.enlace-tw{
+  display: flex;
+  justify-content: center;
+}
 
 // ------------------DESARROLLOS-----------
 // ----------------------------------------

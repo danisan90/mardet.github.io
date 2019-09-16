@@ -527,7 +527,7 @@ nav .transparent {
 .radar-content .radar-descrip {
   text-align: justify;
   font-weight: 300;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
 }
 
 .columns-sist {
@@ -558,10 +558,6 @@ nav .transparent {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.radar-content .radar-descrip {
-  margin: 0 65px;
-  margin-bottom: 5px;
 }
 
 @media (max-width: 768px) {
@@ -629,19 +625,10 @@ article iframe {
   margin-bottom: 5px;
 }
 
-.recep-column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  padding: 5px;
-  margin: 20px 0;
-}
-.recep-column .sat-descrip {
+.radar-column .sat-descrip {
   text-align: justify;
   font-weight: 300;
-  font-size: 1.125rem;
-  margin: 0 65px;
+  font-size: 1.2rem;
   margin-bottom: 5px;
 }
 
@@ -685,7 +672,7 @@ article iframe {
 # ACORDEON
 --------------------------------------------------------------*/
 .wrap-collabsible {
-  width: 90%;
+  width: 100%;
   margin: 5px;
 }
 
@@ -748,6 +735,17 @@ input[type=checkbox] {
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
   padding: 0.5rem 1rem;
+}
+
+.container-erth {
+  display: box;
+  position: relative;
+  width: 100%;
+}
+
+.enlace-tw {
+  display: flex;
+  justify-content: center;
 }
 
 #desarrollos {
