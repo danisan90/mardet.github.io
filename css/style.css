@@ -77,10 +77,10 @@ body {
   }
 
   .encab-description {
-    width: 400px;
+    width: 350px;
   }
   .encab-description p {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     top: 27vw;
   }
 }
@@ -432,10 +432,8 @@ nav .transparent {
   }
 }
 @media (max-width: 768px) {
-  #about .bd-notification {
-    font-size: 0.99rem;
-    margin-left: 0.5rem;
-    margin-right: 0.75rem;
+  #about .row {
+    justify-content: center;
   }
 
   .section-title-divider {
