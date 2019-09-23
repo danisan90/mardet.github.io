@@ -87,7 +87,7 @@ body{
   }
   @media (max-width: 768px) {
     #hero h1 {
-      font-size: 28px;
+      font-size: 32px;
       line-height: 36px;
     }
     
@@ -436,6 +436,9 @@ nav{
     .section-title{
       margin: 15px 0px;
     }
+    .section-title-divider {
+      margin-bottom:10px;
+    }
   }
   
   /* Get Started Section
@@ -484,13 +487,11 @@ nav{
     //   margin-left: .5rem; 
     //   margin-right: .75rem;
     // }
-     .section-title-divider{
-      margin-bottom: 0;
-    }
+    
 
 
     .columns-about {
-      margin-left: .75rem; 
+      // margin-left: .75rem; 
       margin-right: .75rem; 
       margin-top: none;
       -webkit-column-count: 1;
@@ -641,8 +642,20 @@ nav{
     .service-title{
       margin-top: 0;
     }
+    .radar-content{
+       margin-left: 2rem;
+      //   // margin-right: 0.75rem;
+        width: 100%;
+        .radar-descrip{
+          font-weight: 300;
+          font-size: 1.125rem;
+ 
+         
+          width:100%;
+        }
     
    }
+  }
    #services .service-description {
     display: flex;
     flex-direction: column;
@@ -664,13 +677,14 @@ nav{
   .radar-content{
   //   // margin-left: 0.75rem;
   //   // margin-right: 0.75rem;
-    width: 100%;
-    .radar-descrip{
-      font-size: 0.99rem;
-      margin-left: 0.5rem;
-      margin-right: 0.75rem;
-      width:100%;
-    }
+    // width: 100%;
+    // .radar-descrip{
+    //   font-weight: 300;
+    //   font-size: 1.125rem;
+    //   margin-left: 2rem;
+     
+    //   width:100%;
+    // }
     article{
       width: 100%;
       height: 350px;
@@ -785,6 +799,15 @@ article{
 
   }
 }
+/* ///////////////////////////////////////
+informacion
+/////////////////////////////////////// */
+@media (max-width: 768px) {
+
+  .radar-column .info-content {
+    width: 100%;
+  }
+  }
   /*--------------------------------------------------------------
 # ACORDEON
 --------------------------------------------------------------*/
@@ -849,7 +872,7 @@ input[type='checkbox'] {
 }
 
 .toggle:checked + .lbl-toggle + .collapsible-content {
-  max-height: 350px;
+  max-height: 900px;
 }
 
 .toggle:checked + .lbl-toggle {
@@ -896,6 +919,7 @@ h5 {
   text-align: center;
   padding-top: 40px;
   font-size: 13px;
+  margin-bottom: none;
 }
 
 .column-des {
@@ -903,8 +927,7 @@ h5 {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  // background-color: $hover-font-color-navbar;
-  // height: 100px;
+  
   padding: 5px;
   margin: 20px 0;
 

@@ -72,7 +72,7 @@ body {
 }
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 32px;
     line-height: 36px;
   }
 
@@ -395,6 +395,10 @@ nav .transparent {
   .section-title {
     margin: 15px 0px;
   }
+
+  .section-title-divider {
+    margin-bottom: 10px;
+  }
 }
 /* Get Started Section
 --------------------------------*/
@@ -436,12 +440,7 @@ nav .transparent {
     justify-content: center;
   }
 
-  .section-title-divider {
-    margin-bottom: 0;
-  }
-
   .columns-about {
-    margin-left: 0.75rem;
     margin-right: 0.75rem;
     margin-top: none;
     -webkit-column-count: 1;
@@ -567,6 +566,15 @@ nav .transparent {
   .radar-column .service-title {
     margin-top: 0;
   }
+  .radar-column .radar-content {
+    margin-left: 2rem;
+    width: 100%;
+  }
+  .radar-column .radar-content .radar-descrip {
+    font-weight: 300;
+    font-size: 1.125rem;
+    width: 100%;
+  }
 
   #services .service-description {
     display: flex;
@@ -580,15 +588,6 @@ nav .transparent {
     margin-right: 0.75rem;
     margin-top: none;
     width: 25%;
-  }
-  .radar-column .radar-content {
-    width: 100%;
-  }
-  .radar-column .radar-content .radar-descrip {
-    font-size: 0.99rem;
-    margin-left: 0.5rem;
-    margin-right: 0.75rem;
-    width: 100%;
   }
   .radar-column .radar-content article {
     width: 100%;
@@ -666,6 +665,14 @@ article iframe {
     margin: 5px;
   }
 }
+/* ///////////////////////////////////////
+informacion
+/////////////////////////////////////// */
+@media (max-width: 768px) {
+  .radar-column .info-content {
+    width: 100%;
+  }
+}
 /*--------------------------------------------------------------
 # ACORDEON
 --------------------------------------------------------------*/
@@ -719,7 +726,7 @@ input[type=checkbox] {
 }
 
 .toggle:checked + .lbl-toggle + .collapsible-content {
-  max-height: 350px;
+  max-height: 900px;
 }
 
 .toggle:checked + .lbl-toggle {
@@ -763,6 +770,7 @@ h5 {
   text-align: center;
   padding-top: 40px;
   font-size: 13px;
+  margin-bottom: none;
 }
 
 .column-des {
