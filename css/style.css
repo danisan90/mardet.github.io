@@ -558,6 +558,10 @@ nav .transparent {
 }
 
 @media (max-width: 768px) {
+  .row {
+    justify-content: center;
+  }
+
   .radar-column {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
@@ -580,6 +584,10 @@ nav .transparent {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  #services .service-description .medic-nub {
+    margin-left: 2rem;
+    width: 100%;
   }
 }
 @media (max-width: 479px) {
@@ -617,9 +625,8 @@ article iframe {
   background-color: #3AAFA9;
 }
 
-.med-column {
-  margin: 20px 75px;
-  margin-bottom: 5px;
+.medic-nub {
+  display: flex;
 }
 
 .radar-column .sat-descrip {
@@ -656,14 +663,6 @@ article iframe {
     width: 100%;
     margin: 5px;
   }
-
-  .med-column .service-description {
-    width: 375px;
-  }
-  .med-column .service-description .wrap-collabsible {
-    width: 100%;
-    margin: 5px;
-  }
 }
 /* ///////////////////////////////////////
 informacion
@@ -689,6 +688,7 @@ input[type=checkbox] {
   display: block;
   font-weight: bold;
   font-family: monospace;
+  font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
   padding: 1rem;

@@ -481,6 +481,7 @@ nav{
   @media (max-width: 768px) {
     #about .row{
       justify-content: center;
+
     }
     // #about .bd-notification {
     //   font-size: .99rem;
@@ -561,7 +562,6 @@ nav{
   font-size: 1.125rem;
 }
 
-
 .service-description .radar{
   display: flex;
   .radar-content{
@@ -634,6 +634,9 @@ nav{
   // }
 }
 @media (max-width: 768px) {
+  .row{
+    justify-content: center;
+  }
   
   .radar-column {
     margin-left: .75rem; 
@@ -653,13 +656,18 @@ nav{
          
           width:100%;
         }
-    
-   }
+    }
   }
    #services .service-description {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    .medic-nub{
+      margin-left: 2rem;
+      
+      width: 100%;
+    }
 
    }
  
@@ -667,6 +675,7 @@ nav{
 
 
 @media (max-width: 479px){
+ 
   .radar-column {
   
     margin-left: .75rem; 
@@ -730,12 +739,10 @@ article{
 // -----------------
 // MEDICIOND DE VISIBILIDAD
 // ---------------------------
-.med-column {
-  margin: 20px 75px;
-  margin-bottom: 5px;
 
+.medic-nub{
+  display: flex;
 }
-
 
 .radar-column {
   // display: flex;
@@ -774,30 +781,37 @@ article{
 }
 @media (max-width: 768px) {
   .recep-column{
-  .sat-descrip{
+    .sat-descrip{
     font-size: 0.99rem;
     margin-left: 0.5rem;
     margin-right: 0.75rem;
     width:100%;
-  }
+    }
   .recep-content{
     .wrap-collabsible {
       width: 100%;
       margin: 5px;
+    }
   }
+  // .radar-column{
+  //  .medic-nub{
+  //   margin-left: 2rem;
+  //   background-color: blue;
+  //   width: 100%;
+  //  }
+  // }
   }
-}
-  .med-column{
+  // .radar-column.medicion{
 
-   .service-description{
-    width: 375px;
-    .wrap-collabsible {
-      width: 100%;
-      margin: 5px;
-  }
-  }
+  //  .service-description{
+  //   width: 375px;
+  //   .wrap-collabsible {
+  //     width: 100%;
+  //     margin: 5px;
+  // }
+  // }
 
-  }
+  // }
 }
 /* ///////////////////////////////////////
 informacion
@@ -828,7 +842,7 @@ input[type='checkbox'] {
 
   font-weight: bold;
   font-family: monospace;
-  // font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
 
