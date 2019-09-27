@@ -644,6 +644,7 @@ nav{
     margin-top: none;
     .service-title{
       margin-top: 0;
+      margin-left: 0.9rem;
     }
     .radar-content{
        margin-left: 2rem;
@@ -664,8 +665,9 @@ nav{
     align-items: center;
     
     .medic-nub{
-      margin-left: 2rem;
-      
+      display: flex;
+      flex-direction: column;
+      margin-left: 1.5rem;
       width: 100%;
     }
 
@@ -780,14 +782,19 @@ article{
   
 }
 @media (max-width: 768px) {
-  .recep-column{
+  .recepcion{
+    .service-title{
+      margin-top: 0;
+      margin-left: 0.9rem;
+    }
     .sat-descrip{
-    font-size: 0.99rem;
-    margin-left: 0.5rem;
-    margin-right: 0.75rem;
+    font-size: 1.125rem;
+    margin-left: 1.2rem;
+    
     width:100%;
     }
   .recep-content{
+    margin-left: 1.5rem;
     .wrap-collabsible {
       width: 100%;
       margin: 5px;
@@ -817,9 +824,15 @@ article{
 informacion
 /////////////////////////////////////// */
 @media (max-width: 768px) {
-
+  .recepcion{
+    .service-title{
+      margin-top: 0;
+      margin-left: 0.9rem;
+    }
+  }
   .radar-column .info-content {
     width: 100%;
+    margin-left: 0.9rem;
   }
   }
   /*--------------------------------------------------------------
@@ -987,17 +1000,33 @@ h5 {
     
   // }
   .column-des{
-  .desa-description{
-    // margin-right: 5px;
-    .wrap-collabsible{
-      width: 100%;
-      // margin: 5px;
+    .desas-sist{
+      width: 800px;
+      margin-left: 1.5rem;
+      .desa-descrip{
+        font-size: 1.125rem; 
+        width: 350px;
+        font-size: 1.125rem;
+        text-align: center;
+        
+      }
+      .foot-carousel{
+        text-align: center;
+        width: 350px;
+      }
     }
+    // .wrap-collabsible{
+    //   width: 100%;
+      // margin: 5px;
+    
   }
+  // .carousel{
+  //   width: 300px;
+  // }
 }
 
 
-}
+
 
 // -------
 // AJUSTE PARA COLLAPSIBLE 
@@ -1016,60 +1045,7 @@ h5 {
 // -------
 // AJUSTE PARA COLLAPSIBLE 
 // -------------------------
-// .carousel-container{
-//   display: flex;
-//   width: 250px;
-//   margin: 10px;
-//   overflow: hidden;
-//   position: relative;
-//   // border: 5px solid black;
-// }
 
-// .carousel-slide{
-  
-//   display: flex;
-//   width: 400px;
-//   // margin:10px;
-// //   height: 450px;
-//   // .desaImag{
-//   //   height: 450px;
-//   //   width: 400px;}
-  
-//  }
-
-
-// #prevBtn{
-//   position: absolute;
-//   top: 50%;
-//   z-index: 1;
-//   left: 5%;
-//   font-size: 25px;
-//   /* color: white; */
-//   // opacity: 0.5;
-//   /* cursor: pointer; */
-//   border:none;
-//   background: none;
-// }
-// #prevBtn:hover {
-//  color: whitesmoke;
-  
-// }
-// #nextBtn{
-// position: absolute;
-// top: 50%;
-// z-index: 1;
-// right: 5%;
-// font-size: 25px;
-// /* color: white; */
-// // opacity: 0.5;
-// /* cursor: pointer; */
-// border:none;
-// background: none;
-// }
-// #nextBtn:hover {
-//   color: whitesmoke;
-   
-//  }
 
 // ENLACES
 

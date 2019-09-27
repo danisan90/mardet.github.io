@@ -569,6 +569,7 @@ nav .transparent {
   }
   .radar-column .service-title {
     margin-top: 0;
+    margin-left: 0.9rem;
   }
   .radar-column .radar-content {
     margin-left: 2rem;
@@ -586,7 +587,9 @@ nav .transparent {
     align-items: center;
   }
   #services .service-description .medic-nub {
-    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
     width: 100%;
   }
 }
@@ -653,13 +656,19 @@ article iframe {
   }
 }
 @media (max-width: 768px) {
-  .recep-column .sat-descrip {
-    font-size: 0.99rem;
-    margin-left: 0.5rem;
-    margin-right: 0.75rem;
+  .recepcion .service-title {
+    margin-top: 0;
+    margin-left: 0.9rem;
+  }
+  .recepcion .sat-descrip {
+    font-size: 1.125rem;
+    margin-left: 1.2rem;
     width: 100%;
   }
-  .recep-column .recep-content .wrap-collabsible {
+  .recepcion .recep-content {
+    margin-left: 1.5rem;
+  }
+  .recepcion .recep-content .wrap-collabsible {
     width: 100%;
     margin: 5px;
   }
@@ -668,8 +677,14 @@ article iframe {
 informacion
 /////////////////////////////////////// */
 @media (max-width: 768px) {
+  .recepcion .service-title {
+    margin-top: 0;
+    margin-left: 0.9rem;
+  }
+
   .radar-column .info-content {
     width: 100%;
+    margin-left: 0.9rem;
   }
 }
 /*--------------------------------------------------------------
@@ -813,8 +828,19 @@ h5 {
 }
 
 @media (max-width: 768px) {
-  .column-des .desa-description .wrap-collabsible {
-    width: 100%;
+  .column-des .desas-sist {
+    width: 800px;
+    margin-left: 1.5rem;
+  }
+  .column-des .desas-sist .desa-descrip {
+    font-size: 1.125rem;
+    width: 350px;
+    font-size: 1.125rem;
+    text-align: center;
+  }
+  .column-des .desas-sist .foot-carousel {
+    text-align: center;
+    width: 350px;
   }
 }
 .collapsible-content .desacontent {
