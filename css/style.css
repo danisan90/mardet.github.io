@@ -842,6 +842,10 @@ h5 {
     text-align: center;
     width: 350px;
   }
+  .column-des .desa-description .info-desa {
+    width: 35%;
+    margin-left: 34%;
+  }
 }
 .collapsible-content .desacontent {
   background: rgba(23, 37, 42, 0.2);
@@ -963,7 +967,7 @@ input[type=submit]:hover {
   width: 50px;
   height: 50px;
   bottom: 40px;
-  right: 50px;
+  right: 20px;
   background-color: #17252A;
   text-decoration: none;
   text-align: center;
