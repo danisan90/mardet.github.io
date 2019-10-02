@@ -458,13 +458,13 @@ nav{
   font-size: 1.125rem;
   -webkit-column-count: 2;
   -moz-column-count: 2;
-       column-count: 2;
--webkit-column-width: 200px;
-  -moz-column-width: 200px;
-  column-width: 200px;
+    // column-count: 2;
+  -webkit-column-width: 200px;
+  -moz-column-width: 500px;
+  // column-width: 200px;
   -webkit-column-gap: 4em;
   -moz-column-gap: 4em;
-  column-gap: 4em;
+  // column-gap: 4em;
   
     .more-read{
       display: none;
@@ -954,7 +954,6 @@ h5 {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  
   padding: 5px;
   margin: 20px 0;
 
@@ -970,10 +969,12 @@ h5 {
     
   }
   .desa-descrip{
+    
     font-weight: 300;
     font-size: 1.2rem;
     margin: 0 65px;
     margin-bottom: 5px;
+    text-align: -moz-center;
     }
  
 }
