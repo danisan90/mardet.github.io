@@ -461,36 +461,36 @@
           <p class="section-description">Envienos su consulta</p>
       </div>
       <div class="container-contact">
-        <form action="" class="contact-form" >
+        <form action="/consulta.php" class="contact-form" name="contactForm" onsubmit="return validateForm()">
           <div class="row">
             <div class="col-25">
-              <label for="fname">Nombre</label>
+              <label for="fname">Nombre y Apellido *</label>
             </div>
             <div class="col-75">
-                <input type="text" name="" id="fname"  placeholder="Nombre">
+                <input type="text" name="Nameylast" id="fname"  placeholder="Nombre y Apellido">
             </div>
           </div>
           <div class="row">
               <div class="col-25">
-                  <label for="lname">Apellido</label>
+                  <label for="e-mail">E-mail *</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" name="lastname" id="lname" placeholder="Apellido">
+                    <input type="text" name="Email" id="email" placeholder="e-mail">
                 </div>
           </div>
           <div class="row">
             <div class="col-25">
-              <label for="companie">Empresa</label>
+              <label for="companie">Empresa *</label>
             </div>
             <div class="col-75"><input type="text" name="companie" id="companiename"  placeholder="Empresa">
             </div>
           </div>
           <div class="row">
             <div class="col-25">
-              <label for="subject">Comentarios</label>
+              <label for="subject">Comentarios *</label>
             </div>
             <div class="col-75">
-              <textarea name="sbject" id="subject" cols="30" rows="10"  placeholder="Deje aqui su consulta"></textarea></div>
+              <textarea name="subject" id="subject" cols="30" rows="10"  placeholder="Deje aqui su consulta"></textarea></div>
           </div>
           <div class="row enviar-btn">
             <input type="submit" value="Enviar">
