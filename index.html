@@ -461,36 +461,38 @@
           <p class="section-description">Envienos su consulta</p>
       </div>
       <div class="container-contact">
-        <form action="/consulta.php" class="contact-form" name="contactForm" onsubmit="return validateForm()">
+        <form action="consulta.php" class="contact-form" name="contactForm" method="post" onsubmit="return validateForm()">
           <div class="row">
             <div class="col-25">
-              <label for="fname">Nombre y Apellido *</label>
+              <label for="nombreV">Nombre y Apellido *</label>
             </div>
             <div class="col-75">
-                <input type="text" name="Nameylast" id="fname"  placeholder="Nombre y Apellido">
+                <input type="text" name="nombreV" id="fname"  placeholder="Nombre y Apellido">
             </div>
           </div>
           <div class="row">
               <div class="col-25">
-                  <label for="e-mail">E-mail *</label>
+                  <label for="emailV">E-mail *</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" name="Email" id="email" placeholder="e-mail">
+                    <input type="text" name="emailV" id="email" placeholder="e-mail">
                 </div>
           </div>
           <div class="row">
             <div class="col-25">
-              <label for="companie">Empresa *</label>
+              <label for="empresaV">Empresa *</label>
             </div>
-            <div class="col-75"><input type="text" name="companie" id="companiename"  placeholder="Empresa">
+            <div class="col-75">
+              <input type="text" name="empresaV" id="companiename"  placeholder="Empresa">
             </div>
           </div>
           <div class="row">
             <div class="col-25">
-              <label for="subject">Comentarios *</label>
+              <label for="comentariosV">Comentarios *</label>
             </div>
             <div class="col-75">
-              <textarea name="subject" id="subject" cols="30" rows="10"  placeholder="Deje aqui su consulta"></textarea></div>
+              <textarea name="comentariosV" id="subject" cols="30" rows="10"  placeholder="Deje aqui su consulta"></textarea>
+            </div>
           </div>
           <div class="row enviar-btn">
             <input type="submit" value="Enviar">

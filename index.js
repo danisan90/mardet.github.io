@@ -159,24 +159,24 @@ menu();
 function validateForm() {
   
       
-  if( document.contactForm.Nameylast.value == "" ) {
+  if( document.contactForm.nombreV.value == "" ) {
      alert( "Por favor, ingrese Nombre y Apellido" );
-     document.contactForm.Nameylast.focus() ;
+     document.contactForm.nombreV.focus() ;
      return false;
   }
-  if( document.contactForm.Email.value == "" ) {
+  if( document.contactForm.emailV.value == "" ) {
     alert( "Por favor, ingrese un e-mail" );
-    document.contactForm.Email.focus() ;
+    document.contactForm.emailV.focus() ;
     return false;
  }
-  if( document.contactForm.companie.value == "" ) {
+  if( document.contactForm.empresaV.value == "" ) {
   alert( "Por favor, ingrese el nombre de su Empresa" );
-  document.contactForm.companie.focus() ;
+  document.contactForm.empresaV.focus() ;
   return false;
   }
-  if( document.contactForm.subject.value == "" ) {
+  if( document.contactForm.comentariosV.value == "" ) {
     alert( "Por favor, ingrese una consulta" );
-    document.contactForm.subject.focus() ;
+    document.contactForm.comentariosV.focus() ;
     return false;
     }
 }
