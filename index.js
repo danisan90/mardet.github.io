@@ -100,7 +100,9 @@ menu();
 // CONTACT VALIDATION
 // --------------------------------
 
-
+$(document).ready(function(){
+  $("#btnSubmit").click(validateForm);
+})
 function validateForm() {
   
       
@@ -135,8 +137,7 @@ function validateForm() {
 
       
       $.post('consulta.php', post_data, function(response) {
-        window.open('http://www.mardet.com.ar/');
-
+        location.reload();
       });
     }
 

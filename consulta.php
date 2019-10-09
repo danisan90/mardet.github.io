@@ -21,7 +21,7 @@ $header .= "Content-Type: text/plain";
 
 $mensaje = "Consulta de " . $nombre . ", realizada el " . $fecha . " \r\n";
 $mensaje .= "Escribió: " . $comentarios . " \r\n";
-$mensaje .= "Referencias para contacto: " . " \r\n";
+#$mensaje .= "Referencias para contacto: " . " \r\n";
 $mensaje .= "E-mail: " . $email . " \r\n";
 #$mensaje .= "Localidad: " . $localidad . ". Teléfono: " . $telefono . " \r\n";
 
@@ -32,6 +32,7 @@ $para = 'danisanchez.90@gmail.com';
 $asunto = 'Mardet S.R.L. - Consulta';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
+header("Location: http://https://danisan90.github.io/mardetpage/")
 
 //echo '&estatus=ok&';
 ?>
