@@ -95,61 +95,6 @@ menu();
 
 
 
-// CAROUSEL
-
-//CAROUSEL
-
-
-// const carouselSlide =  document.querySelector('.carousel-slide');
-// const carouselImages =  document.querySelectorAll('.carousel-slide img');
-
-
-// //buttons
-// const prevBtn =  document.querySelector("#prevBtn");
-// const nextBtn = document.querySelector("#nextBtn");
-
-
-// //Counter
-// let counter = 1;
-// const size = carouselImages[0].clientWidth;
-
-
-// carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-// //button Liteners
-
-// nextBtn.addEventListener('click', () => {
-  
-// if(counter >= carouselImages.length -1)return;
-
-//   carouselSlide.style.transition = "transform 0.4s ease-in-out";
-  
-//   counter++;
-//   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-// });
-
-// prevBtn.addEventListener('click', () => {
-//   if(counter <= 0)return;
-//   carouselSlide.style.transition = "transform 0.4s ease-in-out";
-//   counter--;
-//   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-// });
-
-// carouselSlide.addEventListener('transitionend', () => {
-//   if(carouselImages[counter].id === 'lastClone'){
-//     carouselSlide.style.transition = "none";
-//     counter = carouselImages.length -2;
-//       carouselSlide.style.transition = "transform 0.6s ease-in-out";
-
-//   }
-//   if(carouselImages[counter].id === 'firstClone'){
-//     carouselSlide.style.transition = "none";
-//     counter = carouselImages.length - counter;
-//       carouselSlide.style.transition = "transform 0.6s ease-in-out";
-
-//   }
-
-// });
 
 // --------------------------------
 // CONTACT VALIDATION
@@ -179,6 +124,22 @@ function validateForm() {
     document.contactForm.comentariosV.focus() ;
     return false;
     }
+    {
+      //get input field values data to be sent to server
+      post_data = {
+        'nombre': $('input[name=nombreV]').val(),
+        'email': $('input[name=emailV]').val(),
+        'empresa': $('input[name=empresaV]').val(),
+        'comentarios': $('textarea[name=comentariosV]').val()
+      };
+
+      
+      $.post('consulta.php', post_data, function(response) {
+        window.open('http://www.mardet.com.ar/');
+
+      });
+    }
+
 }
 
 
