@@ -103,8 +103,10 @@ menu();
 $(document).ready(function(){
   $("#btnSubmit").click(validateForm);
 })
+
 function validateForm() {
   
+
       
   if( document.contactForm.nombreV.value == "" ) {
      alert( "Por favor, ingrese Nombre y Apellido" );
@@ -126,6 +128,7 @@ function validateForm() {
     document.contactForm.comentariosV.focus() ;
     return false;
     }
+    //alert("Gracias por su consulta!");
     {
       //get input field values data to be sent to server
       post_data = {
